@@ -5,9 +5,11 @@ import { connect } from 'react-redux';
     
 const logout = props => {
 
+    const {onLogout} = props;
+
     useEffect (() => {
-        props.onLogout();
-    }, []);
+        onLogout();
+    }, [onLogout]);
 
     
 
